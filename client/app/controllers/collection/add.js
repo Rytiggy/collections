@@ -289,7 +289,8 @@ export default Ember.Controller.extend({
 
     browserAlertSignature: ['alertString'],
     browserAlert: function(alertString) {
-        alert(alertString);
+        this.toast.success(alertString);
+
     },
 
 
