@@ -10,8 +10,9 @@
 
 <section style="flex-direction: row;  flex-wrap: unset; ">
     <fieldset class="item-view-horizontal" style="min-width: 600px;">
-        {{file-renderer download=item.fileLink width="100%" allowfullscreen=true}}
 
+        {{file-renderer download=item.fileLink width="100%" allowfullscreen=true}}
+        {{loading-spinner}}
     </fieldset>
     <fieldset class="item-view-horizontal">
         {{#if (or item.location (and item.startTime item.endTime))}}
